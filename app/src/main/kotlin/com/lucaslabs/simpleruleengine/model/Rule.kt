@@ -5,4 +5,5 @@ data class Rule(
     val operator: String,
     val valueType: String,
     val value: String,
+    val error: String
 )
