@@ -24,12 +24,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "value"
+        val value1 = "value"
         val operator = "=="
-        val value = "value"
+        val value2 = "value"
         val valueType = "string"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -47,12 +47,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "value1"
+        val value1 = "value1"
         val operator = "=="
-        val value = "value2"
+        val value2 = "value2"
         val valueType = "string"
         val error = "error"
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -70,12 +70,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "value1"
+        val value1 = "value1"
         val operator = "!="
-        val value = "value2"
+        val value2 = "value2"
         val valueType = "string"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -93,12 +93,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "value1"
+        val value1 = "value1"
         val operator = "==="
-        val value = "value2"
+        val value2 = "value2"
         val valueType = "string"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -119,12 +119,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1"
+        val value1 = "1"
         val operator = "=="
-        val value = "1"
+        val value2 = "1"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -141,12 +141,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1"
+        val value1 = "1"
         val operator = "!="
-        val value = "2"
+        val value2 = "2"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -163,12 +163,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "2"
+        val value1 = "2"
         val operator = ">"
-        val value = "1"
+        val value2 = "1"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -185,12 +185,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "2"
+        val value1 = "2"
         val operator = ">="
-        val value = "1"
+        val value2 = "1"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -207,12 +207,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1"
+        val value1 = "1"
         val operator = "<"
-        val value = "2"
+        val value2 = "2"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -229,12 +229,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1"
+        val value1 = "1"
         val operator = "<="
-        val value = "2"
+        val value2 = "2"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -251,12 +251,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1"
+        val value1 = "1"
         val operator = "==="
-        val value = "1"
+        val value2 = "1"
         val valueType = "int"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -277,12 +277,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1.0"
+        val value1 = "1.0"
         val operator = "=="
-        val value = "1.0"
+        val value2 = "1.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -299,12 +299,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1.0"
+        val value1 = "1.0"
         val operator = "!="
-        val value = "2.0"
+        val value2 = "2.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -321,12 +321,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "2.0"
+        val value1 = "2.0"
         val operator = ">"
-        val value = "1.0"
+        val value2 = "1.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -343,12 +343,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "2.0"
+        val value1 = "2.0"
         val operator = ">="
-        val value = "1.0"
+        val value2 = "1.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -365,12 +365,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1.0"
+        val value1 = "1.0"
         val operator = "<"
-        val value = "2.0"
+        val value2 = "2.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -387,12 +387,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1.0"
+        val value1 = "1.0"
         val operator = "<="
-        val value = "2.0"
+        val value2 = "2.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -409,12 +409,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "1.0"
+        val value1 = "1.0"
         val operator = "==="
-        val value = "1.0"
+        val value2 = "1.0"
         val valueType = "float"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -435,12 +435,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "=="
-        val value = "true"
+        val value2 = "true"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -457,12 +457,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "!="
-        val value = "false"
+        val value2 = "false"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -479,12 +479,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "&&"
-        val value = "true"
+        val value2 = "true"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -501,12 +501,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "&&"
-        val value = "false"
+        val value2 = "false"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -523,12 +523,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "||"
-        val value = "true"
+        val value2 = "true"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -545,12 +545,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "||"
-        val value = "false"
+        val value2 = "false"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -567,12 +567,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "false"
+        val value1 = "false"
         val operator = "||"
-        val value = "false"
+        val value2 = "false"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -589,12 +589,12 @@ class RuleEngineTest {
         // Given
         val ruleList = mutableListOf<Rule>()
 
-        val field = "true"
+        val value1 = "true"
         val operator = "==="
-        val value = "true"
+        val value2 = "true"
         val valueType = "boolean"
         val error = ""
-        val rule = Rule(field, operator, valueType, value, error)
+        val rule = Rule(value1, operator, valueType, value2, error)
         ruleList.add(rule)
 
         val ruleSet = RuleSet(rules = ruleList)
@@ -618,19 +618,19 @@ class RuleEngineTest {
         val operator = "and"
 
         // Rule 1
-        val field = "1" // amount
+        val value1 = "1" // amount
         val operator1 = ">"
-        val value1 = "0"
+        val value2 = "0"
         val valueType = "int"
         val error1 = ""
-        val rule1 = Rule(field, operator1, valueType, value1, error1)
+        val rule1 = Rule(value1, operator1, valueType, value2, error1)
         ruleList.add(rule1)
 
         // Rule 2
         val operator2 = "<="
-        val value2 = "100"
+        val value3 = "100"
         val error2 = ""
-        val rule2 = Rule(field, operator2, valueType, value2, error2)
+        val rule2 = Rule(value1, operator2, valueType, value3, error2)
         ruleList.add(rule2)
 
         val ruleSet = RuleSet(operator, ruleList)
@@ -651,19 +651,19 @@ class RuleEngineTest {
         val operator = "and"
 
         // Rule 1
-        val field = "1" // amount
+        val value1 = "1" // amount
         val operator1 = ">"
-        val value1 = "2"
+        val value2 = "2"
         val valueType = "int"
         val error1 = "error1"
-        val rule1 = Rule(field, operator1, valueType, value1, error1)
+        val rule1 = Rule(value1, operator1, valueType, value2, error1)
         ruleList.add(rule1)
 
         // Rule 2
         val operator2 = "<="
-        val value2 = "100"
+        val value3 = "100"
         val error2 = "error2"
-        val rule2 = Rule(field, operator2, valueType, value2, error2)
+        val rule2 = Rule(value1, operator2, valueType, value3, error2)
         ruleList.add(rule2)
 
         val ruleSet = RuleSet(operator, ruleList)
@@ -684,19 +684,19 @@ class RuleEngineTest {
         val operator = "and"
 
         // Rule 1
-        val field = "1" // amount
+        val value1 = "1" // amount
         val operator1 = ">"
-        val value1 = "0"
+        val value2 = "0"
         val valueType = "int"
         val error1 = "error1"
-        val rule1 = Rule(field, operator1, valueType, value1, error1)
+        val rule1 = Rule(value1, operator1, valueType, value2, error1)
         ruleList.add(rule1)
 
         // Rule 2
         val operator2 = "<="
-        val value2 = "0"
+        val value3 = "0"
         val error2 = "error2"
-        val rule2 = Rule(field, operator2, valueType, value2, error2)
+        val rule2 = Rule(value1, operator2, valueType, value3, error2)
         ruleList.add(rule2)
 
         val ruleSet = RuleSet(operator, ruleList)
@@ -718,19 +718,19 @@ class RuleEngineTest {
         val operator = "or"
 
         // Rule 1
-        val field = "1" // amount
+        val value1 = "1" // amount
         val operator1 = "=="
-        val value1 = "0"
+        val value2 = "0"
         val valueType = "int"
         val error1 = "error1"
-        val rule1 = Rule(field, operator1, valueType, value1, error1)
+        val rule1 = Rule(value1, operator1, valueType, value2, error1)
         ruleList.add(rule1)
 
         // Rule 2
         val operator2 = "<="
-        val value2 = "100"
+        val value3 = "100"
         val error2 = "error2"
-        val rule2 = Rule(field, operator2, valueType, value2, error2)
+        val rule2 = Rule(value1, operator2, valueType, value3, error2)
         ruleList.add(rule2)
 
         val ruleSet = RuleSet(operator, ruleList)
@@ -750,19 +750,19 @@ class RuleEngineTest {
         val operator = "or"
 
         // Rule 1
-        val field = "1" // amount
+        val value1 = "1" // amount
         val operator1 = "=="
-        val value1 = "0"
+        val value2 = "0"
         val valueType = "int"
         val error1 = "error1"
-        val rule1 = Rule(field, operator1, valueType, value1, error1)
+        val rule1 = Rule(value1, operator1, valueType, value2, error1)
         ruleList.add(rule1)
 
         // Rule 2
         val operator2 = "<="
-        val value2 = "0"
+        val value3 = "0"
         val error2 = "error2"
-        val rule2 = Rule(field, operator2, valueType, value2, error2)
+        val rule2 = Rule(value1, operator2, valueType, value3, error2)
         ruleList.add(rule2)
 
         val ruleSet = RuleSet(operator, ruleList)

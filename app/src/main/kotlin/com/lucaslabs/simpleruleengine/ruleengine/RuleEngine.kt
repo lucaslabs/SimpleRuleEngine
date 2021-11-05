@@ -24,22 +24,22 @@ class RuleEngine {
 
         private fun executeRule(rule: Rule): Pair<Boolean, String> =
             when (rule.valueType) {
-                "string" -> executeCondition(rule.field, rule.operator, rule.value, rule.error)
+                "string" -> executeCondition(rule.value1, rule.operator, rule.value2, rule.error)
                 "int" -> executeCondition(
-                    rule.field.toInt(),
+                    rule.value1.toInt(),
                     rule.operator,
-                    rule.value.toInt(),
+                    rule.value2.toInt(),
                     rule.error)
                 "float" -> executeCondition(
-                    rule.field.toFloat(),
+                    rule.value1.toFloat(),
                     rule.operator,
-                    rule.value.toFloat(),
+                    rule.value2.toFloat(),
                     rule.error
                 )
                 "boolean" -> executeCondition(
-                    rule.field.toBoolean(),
+                    rule.value1.toBoolean(),
                     rule.operator,
-                    rule.value.toBoolean(),
+                    rule.value2.toBoolean(),
                     rule.error
                 )
                 else -> throw Exception("Unhandled value type")
